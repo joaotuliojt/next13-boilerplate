@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate Next.js com Eslint, Prettier, Husky, Commitlint, lint-staged e Tailwind CSS
 
-## Getting Started
+Este é um boilerplate para iniciar rapidamente seus projetos Next.js com uma configuração sólida de ferramentas de desenvolvimento e estilização. Use este boilerplate como ponto de partida para seus projetos e economize tempo na configuração inicial.
 
-First, run the development server:
+## Tecnologias Incluídas
+
+- [Next.js](https://nextjs.org/): O framework React de última geração.
+- [Eslint](https://eslint.org/): Ferramenta de análise estática de código JavaScript/TypeScript.
+- [Prettier](https://prettier.io/): Formatador de código automático.
+- [Husky](https://typicode.github.io/husky/): Hooks Git para execução de scripts.
+- [Commitlint](https://commitlint.js.org/): Verifica se suas mensagens de commit atendem a um padrão.
+- [lint-staged](https://github.com/okonet/lint-staged): Executa scripts em arquivos com alterações no Git.
+- [Tailwind CSS](https://tailwindcss.com/): Framework CSS utilitário de baixo nível.
+- [Jest](https://jestjs.io/): Framework de teste JavaScript.
+- [Testing Library](https://testing-library.com/): Conjunto de ferramentas para testar componentes React de forma acessível.
+
+## Requisitos
+
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado na sua máquina antes de começar.
+
+## Como Usar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/joaotuliojt/next13-boilerplate.git
+```
+
+2. Acesse o diretório do projeto:
+
+```bash
+cd seu-boilerplate
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+4. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Comece a construir seu aplicativo Next.js!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts Disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `dev`: Inicia o servidor de desenvolvimento Next.js.
+- `build`: Cria uma versão otimizada para produção do seu aplicativo.
+- `start`: Inicia o servidor de produção (após a construção).
+- `lint`: Executa o Eslint para verificar a formatação e a qualidade do código.
+- `lint:fix`: Executa o Eslint e tenta corrigir automaticamente os problemas.
+- `format`: Formata todos os arquivos com o Prettier.
+- `lint-staged`: Executa as verificações de lint e formato nos arquivos em estágio (etapa) de commit.
 
-## Learn More
+## Padrões de Mensagem de Commit
 
-To learn more about Next.js, take a look at the following resources:
+Este boilerplate utiliza o Commitlint para aplicar um padrão de mensagens de commit. Certifique-se de seguir o padrão ao criar commits. Os commits devem seguir o seguinte formato:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+<tipo>(escopo opcional): mensagem do commit
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Exemplo:
 
-## Deploy on Vercel
+- `feat: adicionar nova funcionalidade`
+- `fix: corrigir bug no componente X`
+- `chore: atualizar dependências`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribuição
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Sinta-se à vontade para contribuir com melhorias neste boilerplate. Você pode abrir issues, enviar solicitações de pull ou relatar problemas.
