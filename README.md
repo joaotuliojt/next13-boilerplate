@@ -29,7 +29,7 @@ git clone https://github.com/joaotuliojt/next13-boilerplate.git
 2. Acesse o diretório do projeto:
 
 ```bash
-cd seu-boilerplate
+cd next13-boilerplate
 ```
 
 3. Instale as dependências:
