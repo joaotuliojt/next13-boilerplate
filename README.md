@@ -13,6 +13,8 @@ Este é um boilerplate para iniciar rapidamente seus projetos Next.js com uma co
 - [Tailwind CSS](https://tailwindcss.com/): Framework CSS utilitário de baixo nível.
 - [Jest](https://jestjs.io/): Framework de teste JavaScript.
 - [Testing Library](https://testing-library.com/): Conjunto de ferramentas para testar componentes React de forma acessível.
+- [Storybook](https://storybook.js.org/): Ferramenta para documentação de componentes React.
+- [Plop](https://plopjs.com/): Ferramenta de geração de código.
 
 ## Requisitos
 
@@ -56,23 +58,22 @@ yarn dev
 - `build`: Cria uma versão otimizada para produção do seu aplicativo.
 - `start`: Inicia o servidor de produção (após a construção).
 - `lint`: Executa o Eslint para verificar a formatação e a qualidade do código.
-- `lint:fix`: Executa o Eslint e tenta corrigir automaticamente os problemas.
-- `format`: Formata todos os arquivos com o Prettier.
-- `lint-staged`: Executa as verificações de lint e formato nos arquivos em estágio (etapa) de commit.
+- `prepare`: Script usado para instalar o Husky.
+- `test`: Executa os testes usando o Jest.
+- `test:watch`: Executa os testes no modo de observação interativa.
+- `test:ci`: Executa os testes em um ambiente de integração contínua.
+- `generate`: Inicia o gerador de código Plop para criar componentes.
+- `storybook`: Inicia o Storybook na porta http://localhost:6006.
+- `build-storybook`: Cria uma versão otimizada do Storybook para implantação.
 
-## Padrões de Mensagem de Commit
+## Testes
+Os testes são escritos usando o framework Jest e a Testing Library
 
-Este boilerplate utiliza o Commitlint para aplicar um padrão de mensagens de commit. Certifique-se de seguir o padrão ao criar commits. Os commits devem seguir o seguinte formato:
+## Geração de Código
+Você pode usar o Plop para gerar componentes de forma rápida e padronizada. Execute npm run generate ou yarn generate para começar a usar o Plop.
 
-```
-<tipo>(escopo opcional): mensagem do commit
-```
-
-Exemplo:
-
-- `feat: adicionar nova funcionalidade`
-- `fix: corrigir bug no componente X`
-- `chore: atualizar dependências`
+## Storybook
+O Storybook é uma ferramenta útil para desenvolver componentes React isolados. Execute npm run storybook ou yarn storybook para iniciar o ambiente de desenvolvimento do Storybook.
 
 ## Contribuição
 
