@@ -11,6 +11,7 @@
     "test": "jest --passWithNoTests --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=50%",
     "test:ci": "jest --runInBand",
+    "generate": "npx plop --plopfile generators/plopfile.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -54,6 +55,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^14.0.1",
+    "plop": "^4.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "storybook": "^7.4.2"
