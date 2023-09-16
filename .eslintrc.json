@@ -1,3 +1,8 @@
 {
-  "extends": ["plugin:tailwindcss/recommended", "next", "prettier"]
+  "extends": [
+    "plugin:tailwindcss/recommended",
+    "next",
+    "prettier",
+    "plugin:storybook/recommended"
+  ]
 }
