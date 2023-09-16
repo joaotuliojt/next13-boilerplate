@@ -1,7 +1,9 @@
+import Main from '@/components/main';
+
 export default function Home() {
   return (
     <main>
-      <h2>Boilerplate NextJS</h2>
+      <Main />
     </main>
-  )
+  );
 }
