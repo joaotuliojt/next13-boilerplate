@@ -2,8 +2,18 @@ import type { StorybookConfig } from '@storybook/nextjs';
 
 const config: StorybookConfig = {
   staticDirs: ['../public'],
-  stories: ['..src/components/**/stories.tsx'],
-  addons: ['@storybook/addon-essentials'],
+  stories: ['../src/components/**/stories.tsx'],
+  addons: [
+    '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        postCss: {
+          implementation: require.resolve('postcss'),
+        },
+      },
+    },
+  ],
   framework: {
     name: '@storybook/nextjs',
     options: {},
